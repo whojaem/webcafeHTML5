@@ -194,7 +194,20 @@
         </section>
       </div>
       <div class="group group2">
-        <section class="search">검색</section>
+        <section class="search">
+          <h2 class="sr-only">검색</h2>
+          <form method="POST" action="https://formspree.io/seulbinim@gmail.com" class="search-form">
+            <fieldset>
+              <legend>검색 폼</legend>
+              <div class="search-form-wrapper">
+                <label for="search" class="icon-search"><i></i>자료검색</label>
+                <input type="search" id="search" name="search"
+                       placeholder="검색어를 입력하세요." required>
+                <button type="submit" class="button-search">검색</button>
+              </div>
+            </fieldset>
+          </form>
+        </section>
         <div class="board">
           <section class="notice">공지사항</section>
           <section class="pds">자료실</section>
