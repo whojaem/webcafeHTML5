@@ -460,6 +460,9 @@ body{
 }
 
 /* 검색 폼 */
+.search{
+  margin-bottom: 20px;
+}
 .search-form-wrapper{
   background: #ccc linear-gradient(to bottom, #ccc, #eee);
   border: 1px solid #aaa;
@@ -489,6 +492,75 @@ body{
   border: 0;
 }
 
+/* 공지사항 및 자료실 */
+.board{
+  position: relative;
+  min-height: 165px;
+}
+
+.board-tab{
+  margin: 0;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  color: #aaa;
+  font-size: 1em;
+  font-weight: 400;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}
+
+.notice-title{
+  left: 0;
+}
+.archive-title{
+  left: 74px;
+}
+
+.is-select .board-tab{
+  background: #fff;
+  border-color: currentColor;
+  border-bottom-color: #fff;
+  color: #ed552f;
+}
+
+.board-panel, .board-more{
+  display: none;
+}
+
+.is-select .board-panel,
+.is-select .board-more{
+  display: block; 
+}
+
+.board-panel{
+  padding-top: 35px;
+}
+
+.board-panel li{
+  margin-top: 10px;
+  display: flex;
+}
+
+.board-panel a{
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.board-more{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
+
+.more::before{ 
+  color: hsla(110,50%,30%,1);
+}
 
 /* 슬로건 */
 .slogan{
