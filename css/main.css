@@ -734,10 +734,60 @@ body{
   outline-offset: -3px;
 }
 
-
 /* 인기 사이트 */
 .favorite{
   margin-top: 20px;
+  position: relative;
+}
+
+.favorite-list{
+  counter-reset: number;
+}
+
+.favorite-list li{
+  margin-top: 10px;
+  counter-increment: number;
+  position: relative;
+}
+
+.favorite-list li *{
+  vertical-align: middle;
+}
+
+.favorite-list li::before{ 
+  content: counter(number);
+  background: #aaa;
+  color: #fff;
+  padding: 1px 5px;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.favorite-list em{
+  position:absolute;
+  top: 50%;
+  right: 0;
+  width: 9px;
+  height: 11px;
+  background-image: url(./images/rank.png);
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+}
+
+.down{
+  background-position: 0 100%;
+}
+
+.stop{
+  background-position: 0 50%; 
+}
+
+.favorite-more{
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  padding: 8px;
 }
 
 /* 슬로건 */
