@@ -650,8 +650,59 @@ body{
   color: #ed552f;
 }
 
+.event{
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 10px;
+}
+
+.event-title{
+  flex-grow: 1;
+}
+
+.event-button-area{
+  height: 20px;
+  padding: 2px 0 1px ;
+  overflow: hidden;
+  position: relative;
+  top: -4px;
+}
+
+.event-button-previous, 
+.event-button-next{
+  border: 0;
+  padding: 0;
+  background: transparent url(./images/back_forward.png) no-repeat;
+  width: 19px;
+  height: 0;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.event-button-next{
+  background-position: -35px 0;
+}
+
+.event-detail{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.event-thumbnail{
+  width: 160px;
+  background: skyblue;
+  box-shadow: 5px 5px 0 0 #aaa;
+  display: block;
+}
+
+.event-thumbnail img{
+  vertical-align: top;
+  width: 100%;
+}
+
 .event-brief{
-  margin: 0;
+  margin: 10px 0;
 }
 
 .event em{
