@@ -709,6 +709,32 @@ body{
   font-style: normal;
 }
 
+.related-list{
+  background: #fff;
+  margin-top: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  height: 27px;
+  overflow: hidden;
+  transition: all 400ms ease-in-out;
+}
+
+.related-list:hover, .related-list:focus{
+  height: auto;
+  padding: 10px 0;
+}
+
+.related-list a{
+  display: block;
+  line-height: 25px;
+  text-indent: 2em;
+}
+
+.related-list a:focus{
+  outline-offset: -3px;
+}
+
+
 /* 인기 사이트 */
 .favorite{
   margin-top: 20px;
