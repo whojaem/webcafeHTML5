@@ -290,7 +290,6 @@ body{
   width: 380px;
 }
 .group3{
-  background-color: lightgreen;
   width: 190px;
 }
 
@@ -603,41 +602,21 @@ body{
   margin: 0;
   font-weight: 700;
   font-size: 1em;
-  /* grid-row-start: 1;
-  grid-column-start: 2;
-  grid-row-end: 2;
-  grid-column-end: 3; */
-  /* grid-area: 1/2/2/3; */
   grid-area: title;
 }
 
 .news-item-date{
-  /* grid-row-start: 2;
-  grid-column-start: 2;
-  grid-row-end: 3;
-  grid-column-end: 3; */
-  /* grid-area: 2/2/3/3; */
   grid-area: date;
 }
 
 .news-item-brief{
   margin: 0;
   line-height: 1.5;
-  /* grid-row-start: 3;
-  grid-column-start: 2;
-  grid-row-end: 4;
-  grid-column-end: 3; */
-  /* grid-area: 3/2/4/3; */
   grid-area: brief;
 }
 
 .news-item-thumbnail{
   margin: 0;
-  /* grid-row-start: 1;
-  grid-column-start: 1;
-  grid-row-end: 4;
-  grid-column-end: 2; */
-  /* grid-area: 1/1/4/2; */
   grid-area: thumbnail;
 }
 
@@ -652,6 +631,38 @@ body{
   right: -8px;
   padding: 8px;
 }
+
+/* 신규 이벤트와 관련 사이트 */
+.gradient-effect{
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.group3 [class$="-title"]{
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.point-color{
+  color: #ed552f;
+}
+
+.event-brief{
+  margin: 0;
+}
+
+.event em{
+  font-style: normal;
+}
+
+/* 인기 사이트 */
+.favorite{
+  margin-top: 20px;
+}
+
 /* 슬로건 */
 .slogan{
   background-color: pink;
