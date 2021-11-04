@@ -834,7 +834,7 @@ body{
 /* 푸터 */
 .footer{
   background-color: #ccc;  
-  background-image: linear-gradient(#ccc 0%, #eee 70%, #fff 100%);
+  background-image: linear-gradient(#ccc 0%, #eee 70%, `#fff 100%);
 }
 
 .footer-inner{
