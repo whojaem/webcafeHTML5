@@ -33,10 +33,13 @@ html{
 }
 
 body{
-  background-color: #fff;
   color: #181818;
   font-size: 1.4rem;
   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  background-color: #ccc;  
+  background-image: url(./images/bg_flower.png), linear-gradient(#ccc 0%, #eee 50%, #fff 60%, #fff 100%);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 
 /* 숨김 콘텐츠 - 스크린 리더 환경을 고려 */
@@ -50,14 +53,7 @@ body{
   clip-path: inset(50%);
 }
 
-/* 컨테이너 */
-.container{
-  background-color: #ccc;  
-  background-image: url(./images/bg_flower.png), linear-gradient(#ccc, #fff);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-}
-
+/* 레이아웃 공통 */
 .header, .visual, .main, .slogan, .footer-inner{
   width: 940px;
   margin-left: auto;
@@ -792,16 +788,85 @@ body{
 
 /* 슬로건 */
 .slogan{
-  background-color: pink;
-  height: 10vh;
+  position: relative;
+  padding: 10px 80px 0 150px;
+}
+
+.slogan-title{
+  margin: 0;
+  font-size: 1em;
+  font-weight: 400;
+  width: 110px;
+  height: 83px;
+  position: absolute;
+  text-align: center;
+  line-height: 83px;
+  bottom: -25px;
+  left: 15px;
+}
+.slogan-title::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent url(./images/coffee.png) no-repeat;
+}
+
+.slogan-content{
+  font-size: 1.5rem;
+  color: #a09784;
+  line-height: 1.5;
+}
+
+.slogan-content q:before{
+  font-size: 3rem;
+  position: relative;
+  top: 10px;
+  margin-right: 5px;
+}
+
+.slogan-content q:after{
+  content: "";
 }
 
 /* 푸터 */
 .footer{
-  background-color: purple;
+  background-color: #ccc;  
+  background-image: linear-gradient(#ccc 0%, #eee 70%, #fff 100%);
 }
 
 .footer-inner{
-  background-color: orange;
-  height: 10vh;
+  display: flex;
+  padding: 15px 0;
+}
+.footer-information{
+  flex-grow: 1;
+  margin: 0 35px;
+}
+
+.guide-list{
+  display: flex;
+  justify-content: space-between;
+  background: #7b8385;
+  color: #fff;
+  padding: 2px 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;;
+}
+
+.guide-list a{
+  display: block;
+  padding: 8px 15px;
+  text-transform: uppercase;
+}
+
+.address{
+  font-style: normal;
+  margin-bottom: 5px;
+}
+
+.copyright{
+  font-size: 1em;
 }
