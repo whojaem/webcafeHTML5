@@ -44,3 +44,7 @@ git push origin main
 ```bash
 git log [--oneline]
 ```
+
+shape outside css (float 사용 관련 페이지)
+
+단축키 바인딩 (설정 -> 바로가기 키 -> emmet 약어 확장 활용)
