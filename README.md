@@ -45,6 +45,26 @@ git push origin main
 git log [--oneline]
 ```
 
+## 레이아웃 구성하기
+- display : flex 활용
+  - flex-direction 속성으로 row 또는 column 방향을 지정할 수 있음
+  - flex-direction에 따라 메인축과 교차축이 결정됨
+  - 플렉스 컨테이너와 플렉스 아이템이 가질 수 있는 속성이 다름.
+- float 속성
+  - linebox 안에서 왼쪽 또는 오른쪽으로 배치
+  - normal flow를 벗어나서 화면에 떠있는 형태로 배치
+  - float 요소의 부모에게 display: flow-root를 지정해서 float 개체의 높이를 부모가 읽어들일 수 있도록 할 수 있음.
+  - overflow:hidden 또는 clear:both 를 활용하여 float 이슈를 해결 할 수도 있음
+  ```css
+  .clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+  } 
+  ```
 shape outside css (float 사용 관련 페이지)
 
 단축키 바인딩 (설정 -> 바로가기 키 -> emmet 약어 확장 활용)
+```bash
+ul.member-service>li*>span[aria-hidden="true"]{:}+a[href="/"]
+```
