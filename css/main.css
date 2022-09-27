@@ -2,6 +2,16 @@
 html,body{
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
+
+body{
+  color: #000;
+  background-color: #ccc;
+}
+/* 링크 스타일 */
+a{
+  text-decoration: none;
+  color: inherit;
+}
 /* 박스 사이징 재정의 */
 *,*::before,*::after{
   box-sizing:border-box;
@@ -15,12 +25,59 @@ html,body{
 
 /* 헤더 */
 .header{
-  background-color: yellow;
-  height: 10vh;
+  background-color: white;
+  position: relative;
+  padding: 0 30px;
+  height: 120px;
+  border-radius: 0 0 15px 15px;
+}
+
+.logo{
+  /* background-color: teal; */
+  margin: 0;
+  font-size: 1em;
+  position: absolute;
+  top: 45px;
+  left: 60px;
+}
+.logo a{
+  display: block;
+}
+.logo img{
+  /* background-color: blueviolet; */
+  /* display: block; */
+  vertical-align: top;
+}
+/* 멤버 서비스 링크 */
+.member-service{
+  /* background-color: aquamarine; */
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  /* display: flex; */
+  /* font-size: 0; */
+  text-align: right;
+  /* margin-right: -10px; */
+  /* position: relative; */
+  /* right: -10px; */
+  transform: translateX(10px);
+}
+
+.member-service li{
+  display: inline-block;
+  padding: 4px 0;
+  text-transform: uppercase;
+  /* background-color: tomato; */
+  /* font-size: 1rem; */
+}
+.member-service a{
+  display: inline-block;
+  padding: 6px 10px;
+  
 }
 /* 비주얼 */
 .visual{
-  background-color: orange;
+  /* background-color: orange; */
   height: 10vh;
 }
 /* 메인콘텐츠 */
@@ -38,7 +95,7 @@ html,body{
 
 /* float을 활용한 메인 콘텐츠 배치 */
 .main{
-  background-color: blue;
+  /* background-color: blue; */
   display: flow-root;
   min-height: 450px;
   padding: 30px 15px;
@@ -56,17 +113,17 @@ html,body{
 }
 
 .group1{
-  background-color: pink;
+  /* background-color: pink; */
   width: 250px;
 }
 
 .group2{
-  background-color: lime;
+  /* background-color: lime; */
   width: 380px;
 }
 
 .group3{
-  background-color: salmon;
+  /* background-color: salmon; */
   width: 190px;
 }
 
@@ -76,16 +133,12 @@ html,body{
 
 /* 슬로건 */
 .slogan{
-  background-color: aqua;
+  /* background-color: aqua; */
   height: 10vh;
 }
 /* 푸터 */
 .footer{
-  background-color: purple;
+  /* background-color: purple; */
   height: 10vh;
 }
 
-
-.logo{
-  margin: 0;
-}
