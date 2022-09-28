@@ -16,6 +16,32 @@ a{
 *,*::before,*::after{
   box-sizing:border-box;
 }
+/* 건너뛰기 링크 */
+.skip-nav{
+  background-color: #000;
+  text-align: center;
+  color : #fff;
+  /* padding: 4px 0; */
+  /* position: relative; */
+  position: absolute;
+  top : 0;
+  left : 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.skip-nav a{
+  display: inline-block;
+  padding : 10px;
+  position: absolute;
+  /* top : -1000px; */
+}
+
+.skip-nav a:focus{
+  position:static;
+  outline-offset: -4px;
+}
+
 
 /* 레이아웃 */
 .header,.visual,.main,.slogan,.footer-inner{
