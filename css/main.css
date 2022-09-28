@@ -18,8 +18,8 @@ body{
   background-color: #ccc;
 }
 /* 숨김 콘텐츠 */
-.a11y-hidden{
-  background-color: red;
+.a11y-hidden, legend{
+  /* background-color: red; */
   position: absolute;
   width: 1px;
   height: 1px;
