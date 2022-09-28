@@ -1,12 +1,31 @@
+@import url(./fonts.css);
+@import url(./fontello.css);
+
 /* 기본 글꼴 - 웹폰트 */
 html,body{
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
+html{
+  font-size:10px;
+}
 
 body{
+  font-size : 1.4rem;
   color: #000;
   background-color: #ccc;
 }
+/* 숨김 콘텐츠 */
+.a11y-hidden{
+  background-color: red;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip : rect(1px, 1px, 1px, 1px);
+  clip-path: polygon(0 0,0 0,0 0);
+}
+
 /* 링크 스타일 */
 a{
   text-decoration: none;
@@ -54,7 +73,7 @@ a{
   background-color: white;
   position: relative;
   padding: 0 30px;
-  height: 120px;
+  /* height: 120px; */
   border-radius: 0 0 15px 15px;
 }
 
@@ -63,7 +82,7 @@ a{
   margin: 0;
   font-size: 1em;
   position: absolute;
-  top: 45px;
+  top: 43px;
   left: 60px;
 }
 .logo a{
@@ -101,6 +120,94 @@ a{
   padding: 6px 10px;
   
 }
+/* 메인 메뉴 */
+.navigation{
+  padding-bottom: 35px;
+}
+.menu{
+  border-top: 2px solid black;
+  height: 47px;
+  /* background-color: orange;
+  background-image: linear-gradient(to bottom, orange 0%, orangered 30%,orangered 70% ,orange 100%); */
+  background: #ff5328 linear-gradient(to bottom, #f79131 0%,#fc632f 30%,#ff5328 71%,#f99f0e 100%);
+  margin: 0;
+  padding-left: 230px;
+  list-style: none;
+  border-radius: 0 0 5px 5px;
+
+}
+.menu-item{
+  position: relative;
+  float:left;
+  border-left : 2px solid white;
+}
+.is-active .menu-button{
+  color : #ff0;
+}
+
+.is-active .menu-button::after{
+  content : "";
+  display: block;
+  /* border-top : 1px solid black; */
+  background : black;
+  height: 2px;
+}
+.menu-button{
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  padding : 0 23px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #fff;
+  font-size : 1.5rem;
+  text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+}
+.is-active .sub-menu{
+  display: block;
+}
+.menu-html, .menu-css, .menu-standards{
+  left : 0;
+}
+.menu-accessibility, .menu-qna, .menu-archive {
+  right : 0;
+}
+.sub-menu{
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  position: absolute;
+  display: none;
+  top : 47px;
+  white-space: nowrap;
+}
+.sub-menu li{
+  display: inline-block;
+}
+.sub-menu a{
+  display: inline-block;
+  padding: 6px 10px;
+}
+/* 첫번째 자식요소 ::before  */
+.sub-menu a::before{
+  content : "\f192";
+  font-family: 'fontello';
+  display: inline-block;
+  width: 1em;
+  margin-right: .2em;
+}
+.sub-menu a:focus{
+  outline:none;
+}
+.sub-menu a:hover::before, .sub-menu a:focus::before{
+  content : "\e800";  
+}
+
+.sub-menu a:hover, .sub-menu a:focus{
+  color : red;
+}
+
+
 /* 비주얼 */
 .visual{
   /* background-color: orange; */
