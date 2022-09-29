@@ -394,7 +394,28 @@ a{
 /* .clearfix{
   clear: both;
 } */
-
+/* 유효성 검사 배너 */
+.validation{
+  margin-top : 25px;
+}
+.validation-list{
+  margin-top : 10px;
+  padding-left: 0;
+  list-style: none;
+}
+.validation-list li{
+  margin-top:10px;
+}
+.validation-list a{
+  display: block;
+  background: url(./images/validation_icon.png) no-repeat 20px 50%, #ccc linear-gradient(#ccc, #eee);
+  border : #aaa solid 2px;
+  border-radius: 30px;
+  padding : 8px 20px 8px 45px;
+}
+.validation-list a:hover, .validation-list a:focus{
+  color : red;
+}
 /* 슬로건 */
 .slogan{
   /* background-color: aqua; */
