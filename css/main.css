@@ -290,11 +290,11 @@ a{
   border-radius: 15px 15px 0 0;
 }
 
-/* .clearfix::after{
+.clearfix::after{
   content: "";
   display: block;
   clear: both;
-} */
+}
 
 .group{
   margin: 0 15px;
@@ -416,6 +416,59 @@ a{
 .validation-list a:hover, .validation-list a:focus{
   color : red;
 }
+/* 웹 관련 용어 */
+.term{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: #ccc linear-gradient(#aaa, #ccc);
+  padding : 10px 15px;
+  margin-top : 20px;
+  display: flow-root;
+}
+.term-title{
+  font-size : 1.5rem;
+  margin: 0;
+}
+.term-list{
+  margin : 10px 0 0 0;
+  
+}
+.term-list dd{
+  margin-left:0;
+  
+}
+.term-list-inner{
+  display: flow-root;
+  margin-top : 10px;
+}
+
+.term-list-subject{
+  width: 140px;
+  float : right;
+  color : #296897;
+  font-weight:500;
+}
+.term-list-thumbnail{
+  float : left;
+}
+.term-list-thumbnail img{
+  vertical-align: top;
+  
+}
+.term-list-brief{
+  float : right;
+  width: 140px;
+  margin-top : 10px;
+}
+
+.reverse .term-list-subject,
+.reverse .term-list-brief{
+  float : left;
+}
+.reverse .term-list-thumbnail{
+  float : right;
+}
+
 /* 슬로건 */
 .slogan{
   /* background-color: aqua; */
