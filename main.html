@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
   <!-- parsing이 끝나고 script 실행하도록 defer 선언 -->
-  <!-- <script src="./js/jquery.min.js" defer></script>
-  <script src="./js/menu-tab.js" defer></script> -->
+  <script src="./js/jquery.min.js" defer></script>
+  <script src="./js/menu-tab.js" defer></script>
 </head>
 <body>
   <div class="skip-nav">
@@ -260,11 +260,11 @@
               <time datetime="2022-09-12T13:53:45">2022.09.12</time>
             </li>
           </ul>
-          <a href="/" class="icon-plus notice-more more" title="공지사항" aria-labelledby="noticeTitle">더보기</a>
+          <a href="/" class="icon-plus notice-more more board-more" title="공지사항" aria-labelledby="noticeTitle">더보기</a>
         </section>
         <section class="archive board-panel">
           <h2 class="a11y-hidden" id="archiveTitle">자료실</h2>
-          <button type="button" class="board-tab button-notice">자료실</button>
+          <button type="button" class="board-tab button-archive">자료실</button>
           <ul class="archive-list board-list">
             <li>
               <a class="icon-dot-circled" href="/">디자인 사이트 링크 모음</a>
@@ -287,9 +287,12 @@
               <time datetime="2022-10-12T13:53:45">2022.10.12</time>
             </li>
           </ul>
-          <a href="/" class="icon-plus archive-more more" title="자료실" aria-labelledby="archiveTitle">더보기</a>
+          <a href="/" class="icon-plus archive-more more board-more" title="자료실" aria-labelledby="archiveTitle">더보기</a>
         </section>
       </div>
+      <section class="news">
+        <h2 class="news-title">새소식</h2>
+      </section>
     </div>
     <div class="group group3">group3</div>
     <!-- <div class="clearfix"></div> -->

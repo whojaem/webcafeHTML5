@@ -524,6 +524,106 @@ a{
   height: 24px;
   margin-left: 8px;
 }
+/* 공지사항 및 자료실 */
+.board{
+  /* background-color: yellow; */
+  margin-top: 20px;
+  position: relative;
+  padding-top : 45px;
+}
+.board-panel{
+  /* background-color: pink; */
+}
+.board-list, .board-more {
+  display: none;
+}
+.is-select .board-list, .is-select .board-more{
+  display:block;
+}
+
+.board-tab{
+  cursor: grab;
+  position: absolute;
+  top: 0;
+  border: 1px solid #aaa;
+  padding : 6px 8px;
+  border-radius: 5px 5px 0 0;
+  background : #ccc linear-gradient(#ccc, #eee);
+  color : #666;
+}
+
+
+.is-select .board-tab{
+  background: white;
+  color: #dd422a;
+  border-color: currentColor currentColor #fff currentColor;
+}
+.button-notice{
+  left : 0;
+}
+.button-archive{
+  left : 67px;
+}
+
+
+.board-list{
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  /* background-color: skyblue; */
+  /* position : relative; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.board-more{
+  position:absolute;
+  top: -8px;
+  right : -8px;
+  padding : 8px;
+
+}
+.board-list li{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  /* background-color: salmon; */
+}
+.board-list li:first-child{
+  margin-top: 0;
+}
+.board-list a{
+  /* background-color: blueviolet; */
+  flex-grow : 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* .board-list li:nth-child(n+2){
+  background-color: teal;
+} */
+/* .more{
+  background-color: red;
+  float : right;
+  top : 0;
+  right : 0;
+} */
+.more::before{
+  color: hsla(110, 50%, 30%, 1);
+}
+/* 새소식 */
+.news{
+  background-color: lightgreen;
+  margin-top: 20px;
+}
+.news-title{
+  font-size : 1.5rem;
+  margin : 0;
+  color:#dd422a
+}
 /* 슬로건 */
 .slogan{
   /* background-color: aqua; */
