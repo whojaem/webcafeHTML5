@@ -930,6 +930,48 @@ a{
 /* 푸터 */
 .footer{
   /* background-color: purple; */
-  height: 10vh;
+  /* height: 10vh; */
+  background: linear-gradient(to bottom, #ccc 0%, #eee 30%, #fff 60%, #fff 100%);
+  background-color: #ccc;
+}
+.footer-inner{
+  padding : 15px 80px 15px 180px;
+  position :relative;
 }
 
+/* 푸터 로고 */
+.footer-logo{
+  position: absolute;
+  top : 45px;
+  left : 40px;
+}
+/* 가이드 링크 목록 */
+.guide-list{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding : 4px 40px;
+  background-color: #7b8385;
+  color : white;
+  margin-right: 20px;
+  border-radius: 30px;
+}
+.guide-list a{
+  display: block;
+  padding: 6px 10px;
+  /* background-color:blue; */
+  text-transform: uppercase;
+}
+/* 배지 */
+.badge-container{
+  position: absolute;
+  top : 15px;
+  right : 0;
+}
+/* 주소 및 연락처 */
+.address{
+  margin-top : 10px;
+}
+.address span:nth-child(n+2){
+  margin-left : 10px;
+}
