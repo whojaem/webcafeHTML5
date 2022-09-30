@@ -85,6 +85,9 @@ a{
 .spacing-md{
   padding : 15px;
 }
+.gap-top-md{
+  margin-top : 20px;
+}
 .accent-color{
   color:#dd422a;
 }
