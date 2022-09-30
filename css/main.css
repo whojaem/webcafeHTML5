@@ -714,6 +714,40 @@ a{
   right : -8px;
   padding : 8px;
 }
+/* 신규 이벤트 */
+.event{
+  /* position: relative; */
+  border-bottom: 1px solid #999;
+}
+.event-title{
+  float : left;
+}
+.event-button{
+  /* background-color: yellow; */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: right;
+}
+.event-button-prev, .event-button-next{
+  width: 19px;
+  height: 18px;
+  padding : 0;
+  border : 0;
+  background:url(./images/back_forward.png);
+}
+.event-button-prev{
+  margin-right: 5px;
+}
+.event-button-next{
+  background-position: -36px 0 ;
+}
+.event-thumbnail img{
+  box-shadow: 5px 5px 0 0 #999;
+}
+.event-thumbnail, .event-brief{
+  margin : 10px 0;
+}
+/* 관련 사이트 */
 /* 슬로건 */
 .slogan{
   /* background-color: aqua; */
