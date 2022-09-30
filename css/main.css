@@ -748,6 +748,44 @@ a{
   margin : 10px 0;
 }
 /* 관련 사이트 */
+.related{
+  padding-top : 10px;
+
+}
+.related-list{
+  margin-top : 10px;
+  background-color: #fff;
+  border : 1px solid #aaa;
+  border-radius: 5px;
+  height: 27px;
+  /* padding-left: 8px; */
+  overflow: hidden;
+  transition: height 250ms, padding 250ms 250ms;
+  /* transition: height 250ms, padding 250ms 250ms, background-color 250ms 250ms; */
+}
+.related-list:hover, .related-list:focus{
+  height : 147px;
+  padding : 10px 0;
+  /* background-color: yellow; */
+  /* transition-duration: 1000ms; */
+  /* transition-delay: 2000ms; */
+}
+.related-list li{
+  height : 25px;
+  padding: 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.related-list a{
+  /* display: block; */
+  /* flex-grow : 1;  */
+  /* width : 100% */
+  flex : 0 0 100%;
+  padding : 0 15px;
+  /* background-color: yellow; */
+  /* line-height: 17px; */
+}
 /* 슬로건 */
 .slogan{
   /* background-color: aqua; */
