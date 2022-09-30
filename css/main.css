@@ -789,6 +789,100 @@ a{
   /* background-color: yellow; */
   /* line-height: 17px; */
 }
+/* 인기사이트 */
+.favorite{
+  position : relative;
+}
+.favorite-list{
+  margin-top : 10px;
+  /* background-color: pink; */
+}
+.favorite-list a{
+  font-size : 1.5rem;
+}
+.favorite-list li{
+  counter-increment: number;
+  /* background-color: violet; */
+  margin-top : 8px;
+  position: relative;
+
+}
+.favorite li::before{
+  display: inline-block;
+  content: counter(number);
+  width: 16px;
+  background-color: #aaa;
+  text-align: center;
+  margin-right: 5px;
+  border-radius: 3px;
+  font-size : 1.3rem;
+  color : white;
+
+}
+.up, .down, .stop{
+  /* background-color: yellow;  */
+  /* display: block; */
+  width: 11px;
+  height: 9px;
+  background :  url(./images/rank.png) no-repeat;
+  position: absolute; /* 무조건 블록으로 판정*/
+  top : 50%;
+  right : 0;
+  margin-top : -5px;
+}
+.stop{
+  background-position: 0 50%;
+}
+.down{
+  background-position: 0 100%;
+}
+
+/* .no1 a::before{
+  content : "1";
+  border : 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #bbb;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  color : white;
+}
+.no2 a::before{
+  content : "2";
+  border : 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #bbb;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  color : white;
+}
+.no3 a::before{
+  content : "3";
+  border : 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #bbb;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  color : white;
+}
+.no4 a::before{
+  content : "4";
+  border : 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #bbb;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  color : white;
+} */
+.favorite-more{
+  position:absolute;
+  top: -8px;
+  right : -8px;
+  padding : 8px;
+}
 /* 슬로건 */
 .slogan{
   /* background-color: aqua; */
