@@ -63,8 +63,36 @@ a{
   position:static;
   outline-offset: -4px;
 }
+/* 클래스 모듈 */
+.reset-list{
+  margin : 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.normal-style{
+  font-style: normal;
+}
+.gradient-effect{
+  border : 1px solid #aaa;
+  border-radius: 5px;
+  background: linear-gradient(#ccc, #eee);
+  background-color : #ccc;
+}
+.spacing-sm{
+  padding : 10px;
 
-
+}
+.spacing-md{
+  padding : 15px;
+}
+.accent-color{
+  color:#dd422a;
+}
+.headline{
+  font-size : 1.5rem;
+  font-weight : 700;
+  margin : 0;
+}
 /* 레이아웃 */
 .header,.visual,.main,.slogan,.footer-inner{
   width: 940px;
